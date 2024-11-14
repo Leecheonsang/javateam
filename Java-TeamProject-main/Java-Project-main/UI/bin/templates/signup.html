@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2>회원가입</h2>
+            <form id="signupForm" action="/signup" method="POST">
+                <label for="username">ID:</label>
+                <input type="text" id="username" name="username" required>
+            
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            
+                <!-- 필수 name 속성 확인 -->
+                <label for="ssnpin">주민번호:</label>
+                <input type="text" id="ssnpin" name="ssnpin" required>
+            
+                <label for="fullName">이름:</label>
+                <input type="text" id="fullName" name="fullName" required>
+            
+                <label for="adress">주소:</label>
+                <input type="text" id="adress" name="adress" required>
+            
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
